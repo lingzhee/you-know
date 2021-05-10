@@ -7,9 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/MYCAT2_admin/wentu-cloud
-          username: 1515728890@qq.com
-          password: nulixuexi1024
+          uri: https://github.com/lingzhee/you-know
 eureka:
   client:
     serviceUrl:
