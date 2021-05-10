@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: member-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/MYCAT2_admin/wentu-cloud.git
+          username: 1515728890@qq.com
+          password: nulixuexi1024
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.107.238.30:8762/eureka/, http://47.115.0.124:8762/eureka/
+  instance:
+    #设置使用IP
+    prefer-ip-address: true
+    #设置外网IP号
+    ip-address: 8.129.97.49
+    #设置外网端口号
+    non-secure-port: 8001
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 5
